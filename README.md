@@ -1,8 +1,8 @@
-# 🎬 CineVault — Personal Film Collection Manager
+# CineVault — Personal Film Collection Manager
 
 Gestor de colección personal de películas con interfaz gráfica Tkinter y estructura de datos de lista doblemente enlazada.
 
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 EstructuraDatosTaller8/
@@ -26,7 +26,7 @@ EstructuraDatosTaller8/
     └── cinevault_app.py         # Aplicación principal Tkinter
 ```
 
-## 🚀 Instalación y Ejecución
+## Instalación y Ejecución
 
 ### Prerrequisitos
 - Python 3.10 o superior
@@ -39,19 +39,19 @@ cd EstructuraDatosTaller8
 python main.py
 ```
 
-## 🎯 Características
+## Características
 
-- ✅ **Lista doblemente enlazada** personalizada (FilmReel/FilmBead)
-- ✅ **Encapsulación completa** en la clase Movie
-- ✅ **Validaciones robustas** en tiempo de construcción
-- ✅ **CRUD completo** (Crear, Leer, Actualizar, Eliminar)
-- ✅ **Búsqueda y filtrado** en tiempo real
-- ✅ **Ordenamiento** por título, año, puntuación, director
-- ✅ **Estadísticas** de la colección con gráficos de texto
-- ✅ **Interfaz oscura** estilo cinematográfico
-- ✅ **Datos de demostración** precargados
+- **Lista doblemente enlazada** personalizada (FilmReel/FilmBead)
+- **Encapsulación completa** en la clase Movie
+- **Validaciones robustas** en tiempo de construcción
+- **CRUD completo** (Crear, Leer, Actualizar, Eliminar)
+- **Búsqueda y filtrado** en tiempo real
+- **Ordenamiento** por título, año, puntuación, director
+- **Estadísticas** de la colección con gráficos de texto
+- **Interfaz oscura** estilo cinematográfico
+- **Datos de demostración** precargados
 
-## 🧩 Arquitectura
+## Arquitectura
 
 ### Capas
 
@@ -68,7 +68,7 @@ python main.py
 - **ISP**: Interfaces específicas y pequeñas
 - **DIP**: Dependencias sobre abstracciones
 
-## 📝 Uso
+## Uso
 
 1. **Agregar película**: Click en "＋ Agregar"
 2. **Editar película**: Doble click en una fila o botón "✎ Editar"
@@ -77,7 +77,7 @@ python main.py
 5. **Buscar**: Escribir en el campo de búsqueda
 6. **Ordenar**: Usar los radio buttons o click en encabezados de columna
 
-## 🔧 Posibles Mejoras
+## Posibles Mejoras
 
 - Persistencia en JSON/SQLite
 - Importación/exportación CSV
@@ -86,6 +86,6 @@ python main.py
 - Múltiples listas (Visto, Pendiente, Favoritas)
 - Tests unitarios con pytest
 
-## 📄 Licencia
+## Licencia
 
 Proyecto educacional - Taller de Estructuras de Datos
