@@ -1,15 +1,8 @@
-"""
-Movie domain entity
-"""
 from datetime import datetime
 from .media_item import MediaItem
 
 
 class Movie(MediaItem):
-    """
-    Represents a single movie entry in the collection.
-    All attributes are private; accessed via properties (encapsulation).
-    """
 
     VALID_GENRES = [
         "Acción", "Aventura", "Animación", "Comedia", "Crimen",
@@ -160,7 +153,6 @@ class Movie(MediaItem):
         )
 
     def score_stars(self) -> str:
-        """Return a star string representation of the score."""
         filled = round(self._score / 2)
         return "★" * filled + "☆" * (5 - filled)
 
