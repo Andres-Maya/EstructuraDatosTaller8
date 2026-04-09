@@ -1,6 +1,3 @@
-"""
-CineVault - UI Components
-"""
 from .config import PALETTE
 from .form_dialog import FormDialog
 from .stats_panel import StatsPanel

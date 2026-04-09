@@ -22,7 +22,6 @@ class Movie(MediaItem):
         score: float,
         notes: str = ""
     ):
-        # Validate on construction — fail fast
         self._title = self._validate_title(title)
         self._director = self._validate_non_empty(director, "Director")
         self._year = self._validate_year(year)
@@ -31,8 +30,6 @@ class Movie(MediaItem):
         self._score = self._validate_score(score)
         self._notes = notes.strip()
         self._added_on = datetime.now().strftime("%Y-%m-%d")
-
-    # ── Validators ───────────────────────────────────────────────
 
     @staticmethod
     def _validate_title(value: str) -> str:
@@ -77,8 +74,6 @@ class Movie(MediaItem):
             raise ValueError("La puntuación debe estar entre 0.0 y 10.0.")
         return round(s, 1)
 
-    # ── Properties (read-only public surface) ────────────────────
-
     @property
     def title(self) -> str:
         return self._title
@@ -111,7 +106,6 @@ class Movie(MediaItem):
     def added_on(self) -> str:
         return self._added_on
 
-    # Allow updates through explicit setters (validated)
     def update(self, **kwargs):
         """Update fields; each goes through the same validators."""
         if "title" in kwargs:
@@ -128,8 +122,6 @@ class Movie(MediaItem):
             self._score = self._validate_score(kwargs["score"])
         if "notes" in kwargs:
             self._notes = kwargs["notes"].strip()
-
-    # ── MediaItem interface ───────────────────────────────────────
 
     def to_dict(self) -> dict:
         return {

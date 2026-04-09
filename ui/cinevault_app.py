@@ -1,6 +1,3 @@
-"""
-CineVaultApp - Main application window
-"""
 import tkinter as tk
 from tkinter import ttk, messagebox
 from typing import Optional
@@ -11,10 +8,6 @@ from .stats_panel import StatsPanel
 
 
 class CineVaultApp:
-    """
-    Main Tkinter application — presentation layer only.
-    All data operations are delegated to CatalogManager.
-    """
 
     def __init__(self, root: tk.Tk):
         self._root = root
